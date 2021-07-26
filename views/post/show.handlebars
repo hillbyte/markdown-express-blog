@@ -1,0 +1,27 @@
+<div id="">
+  <article class="container my-4">
+    <div class="fetch-post">
+      <div class="row justify-content-md-center">
+
+        <div class="col-md-10 card shadow-lg rounded showfetchPost">
+          <img
+            class="card-img-top img-fluid rounded single-img my-1"
+            src="{{trimstring singlePost.photo.0.path}}"
+            alt="photo"
+          />
+          <div class="card-body">
+            <h4 class="card-title text-light">{{singlePost.title}}</h4>
+            <span class="badge badge-secondary font-weight-normal">Posted on:
+              {{moment createdAt format="DD/MM/YYYY"}}</span>
+
+            {{!-- <span class="badge badge-dark">Posted at:{{createdAt}}</span> --}}
+            <p class="card-text">
+              {{{singlePost.sanitizedHtml}}}</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </article>
+</div>

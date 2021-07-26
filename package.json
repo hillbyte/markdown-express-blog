@@ -1,0 +1,30 @@
+{
+  "name": "express-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5",
+    "dompurify": "^2.2.9",
+    "dotenv": "^10.0.0",
+    "expres": "^0.0.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "handlebars": "^4.7.7",
+    "handlebars.moment": "^1.0.4",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.6.0",
+    "marked": "^2.0.7",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.12",
+    "multer": "^1.4.2",
+    "popper.js": "^1.16.1"
+  }
+}

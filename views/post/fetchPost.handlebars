@@ -1,0 +1,46 @@
+<div id="fetchPost">
+    {{>jumbotron}}
+  <article class="container my-4">
+    <div class="fetch-post">
+      <div class="row mx-2">
+
+        {{#each posts}}
+          <div class="col-sm-4 card mb-3 shadow-lg rounded showfetchPost">
+            <img
+              class="card-img-top img-fluid rounded my-1"
+              src="{{trimstring photo.0.path}}"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h3 class="card-title text-light">{{title}}</h3>
+              <span class=" badge  badge-secondary font-weight-normal ">Posted on: {{moment createdAt format="DD/MM/YYYY"}}</span>
+              
+              {{!-- <span class="badge badge-dark">Posted at:{{createdAt}}</span> --}}
+              <p class="card-text" id="post-details">
+                {{description}}</p>
+            </div>
+            <div class="btn-group mb-2">
+              <a
+                class="btn btn-light btn-sm card-link"
+                href="/posts/show/{{_id}}"
+              >Read More</a>
+              <a
+                class="btn btn-info btn-sm card-link"
+                href="/posts/edit-post/{{_id}}"
+              >Edit</a>
+              <form
+                action="/posts/delete-post/{{_id}}?_method=DELETE"
+                method="POST"
+              >
+                <input type="hidden" name="_method" value="DELETE" />
+                <button class="btn btn-danger btn-sm card-link">Delete</button>
+              </form>
+            </div>
+
+          </div>
+        {{/each}}
+
+      </div>
+    </div>
+  </article>
+</div>

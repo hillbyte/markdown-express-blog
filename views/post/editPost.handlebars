@@ -1,0 +1,45 @@
+<section
+  id="postBlock"
+  class="card col-md-6 mx-auto my-4 bg-secondary mb-3 shadow-lg p-3 rounded"
+>
+  <article>
+    <h2 class="display-5 text-center font-weight-bold text-light">Update Article</h2>
+
+    <form action="/posts/edit-post/{{editPost._id}}?_method=PUT" method="POST">
+      <input type="hidden" name="_method" value="PUT" />
+      <div class="form-group">
+        <label for="">Title:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="title"
+          value="{{editPost.title}}"
+          placeholder="Write post title"
+        /></div>
+
+      <div class="form-group">
+        <label for="">Description:</label>
+        <textarea
+          type="text"
+          name="description"
+          placeholder="Write down post details here..."
+          class="form-control"
+        >{{editPost.description}}</textarea></div>
+      <div class="form-group">
+        <label for="">Markdown:</label>
+        <textarea
+          type="text"
+          cols="10"
+          rows="10"
+          name="markdown"
+          placeholder="Write down in markdown format..."
+          class="form-control"
+        >{{editPost.markdown}}</textarea></div>
+
+      <div class="form-group"><label for=""></label>
+        <a href="/" class="btn btn-info">Cancel</a>
+        <button class="btn text-white bg-success my-4">Update Post</button>
+      </div>
+    </form>
+  </article>
+</section>

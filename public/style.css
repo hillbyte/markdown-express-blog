@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  line-height: 1.5;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+}
+body {
+  background-color: #374f67 !important;
+}
+
+.fetch-post h3 {
+  font-size: 22px;
+  text-shadow: 0px 0px 0px #ccc;
+  font-weight: bold;
+}
+
+#post-details {
+  font-size: 19px;
+  /* font-weight: bolder; */
+  text-shadow: 0px 0px 0px #ccc;
+  letter-spacing: 0.9px;
+}
+.single-img {
+  height: 300px !important;
+  /* width: 500px !important; */
+  /* object-fit: cover; */
+}
+.showfetchPost {
+  background-color: #596d7c !important;
+}
+.my-jumbotron {
+  height: 250px !important;
+  background-color: #374f67 !important;
+}
