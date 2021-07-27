@@ -1,22 +1,49 @@
-# CRUD NodeJS Application
 
-A simple CRUD operation based article posting application
+# Markdown Express Blog
 
-## Installation
+A CRUD operation based Markdown Blog posting application
+ 
 
-Install my-project with npm
 
-```bash
-  npm install nodejs-crud
-  cd nodejs-crud
-```
-
-## Tech Stack
-
-**Server:** NodeJS ,Express, MongoDB, Mongoose
+## Tech Stack & Library
 
 **Client:** Handlebars(Template Engine), Bootstrap
+**Server:** Node, Express,Mongoose, Multer, 
 
-## Demo
+  
+## Environment Variables
 
--link to demo:
+To run this project, you will need to add the following environment variables to your .env file
+
+`DB_URL=replace this with mongodb uri`
+
+
+
+  
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/hillbyte/markdown-express-blog.git
+```
+
+Go to the project directory
+
+```bash
+  cd markdown-express-blog
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  node server.js
+```
+
+  
